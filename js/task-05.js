@@ -5,11 +5,11 @@ let message;
 const checkForSpam = function (message) {
   message = message.toLowerCase();
   if (message.includes("spam")) {
-    alert(message.includes("spam"));
+    return message.includes("spam");
   } else if (message.includes("sale")) {
-    alert(message.includes("sale"));
+    return message.includes("sale");
   } else {
-    alert("false");
+    return false;
   }
 };
 

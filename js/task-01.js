@@ -3,7 +3,7 @@ let number;
 const logItems = function (array) {
   for (var i = 0; i + 1 <= array.length; i++) {
     number = i + 1;
-    alert(`${number} - ${array[i]} `);
+    console.log(`${number} - ${array[i]} `);
   }
 };
 
