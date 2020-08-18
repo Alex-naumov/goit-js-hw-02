@@ -1,23 +1,22 @@
 "use strict";
 
 let total = 0;
-let numbers = [];
-let input = prompt("Введите число");
-let TypeInput;
+const numbers = [];
+let input;
+let typeInput;
 let resTypeInput;
 
-while (input != null) {
-  TypeInput = Number(input);
-  resTypeInput = Number.isNaN(TypeInput);
+while (input !== null) {
+  input = prompt("Введите число");
+  typeInput = Number(input);
+  resTypeInput = Number.isNaN(typeInput);
   if (resTypeInput === true) {
     alert("Было введено не число, попробуйте еще раз");
-    input = prompt("Введите число");
   } else {
     numbers.push(input);
-    input = prompt("Введите число");
   }
 }
-if (numbers.length != 0) {
+if (numbers.length !== 0) {
   for (let element of numbers) {
     total = total + Number(element);
   }

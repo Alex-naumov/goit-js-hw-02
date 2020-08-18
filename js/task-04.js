@@ -4,11 +4,9 @@ const formatString = function (string) {
   if (string.length <= 40) {
     return string;
   } else {
-    for (var i = 0; i < 40; i++) {
-      newString = newString + string[i];
-    }
-    return newString;
+    newString = string.slice(0, 40) + "...";
   }
+  return newString;
 };
 
 console.log(formatString("Curabitur ligula sapien, tincidunt non."));
