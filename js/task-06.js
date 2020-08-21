@@ -10,7 +10,7 @@ while (input !== null) {
   input = prompt("Введите число");
   typeInput = Number(input);
   resTypeInput = Number.isNaN(typeInput);
-  if (resTypeInput === true) {
+  if (resTypeInput) {
     alert("Было введено не число, попробуйте еще раз");
   } else {
     numbers.push(input);
